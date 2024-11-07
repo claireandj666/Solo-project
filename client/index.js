@@ -3,23 +3,15 @@ import { createRoot } from 'react-dom/client';
 import './fortune.css'; 
 
 function App() {
-	const [mbti, setMbti] = useState('INTJ');
-	const [zodiac, setZodiac] = useState('Aries');
+	const [mbti, setMbti] = useState('');
+	const [zodiac, setZodiac] = useState('');
 	const [fortune, setFortune] = useState(null);
 
-	// function handleMbtiChange(e) {
-	// 	setMbti(e.target.value);
-	// }
-
-	// function handleZodiacChange(e) {
-	// 	setZodiac(e.target.value);
-	// }
-
-	// const fetchFortune = async () => {
-  //   const response = await fetch(`http://localhost:3000/api/fortune?mbti=${mbti}&zodiac=${zodiac}`);
-  //   const data = await response.json();
-  //   setFortune(data);
-  // };
+	const [friendName, setFriendName] = useState('');
+  const [friendMbti, setFriendMbti] = useState('');
+  const [friendZodiac, setFriendZodiac] = useState('');
+  const [compatibilityResult, setCompatibilityResult] = useState(null);
+	const [showFriendForm, setShowFriendForm] = useState(false);
 
 	const fetchFortune = async () => {
 		fetch(`http://localhost:3000/api/fortune?mbti=${mbti}&zodiac=${zodiac}`)
@@ -37,15 +29,32 @@ function App() {
 
 	}
 
+	const toggleFriendForm = () => {
+    setShowFriendForm(!showFriendForm);
+  };
+
+  // Check compatibility based on MBTI and Zodiac
+  const checkCompatibility = () => {
+    if (mbti === friendMbti && zodiac === friendZodiac) {
+      setCompatibilityResult('You and your friend are highly compatible!');
+    } else {
+      setCompatibilityResult('Score: 88%. \n' +
+				'Your compatibility could be better. But you can still be great friends! \n' +
+				'You have a different style of communication from this person, and you’ll need to make some accommodations if this relationship is to reach its full potential. \n' +
+				'You both get overstimulated by too much activity and both enjoy spending quiet time alone. You and your partner might often find yourself at home with takeout and Netflix, or even in the same room without actually talking to each other, and you’re both okay with that. You likely both have small but intimate circles of friends and there may be no great urgency to work your way into each other’s friendship circles as a way of deepening your own bond. Personal boundaries are important to you, and you respect each other’s personal space by default.');
+    }
+  };
+
   return( 
 		<div>
-			<h1>Welcome to the MBTI-Zodiac Fortune Teller App!</h1>
+			<h1>The Future is in Your Hands</h1>
 			<div className="selection-container">
 				<div className="input-group">
 					<label>Choose your MBTI Type: </label>
 					<select onChange={(e) => setMbti(e.target.value)}>
 						<option value="INTJ">INTJ</option>
 						<option value="ISFP">ISFP</option>
+						<option value="ISTP">ISTP</option>
 						<option value="ENTJ">ENTJ</option>
 						<option value="ESFP">ESFP</option>
 						{/* Add all 16 MBTI types */}
@@ -56,29 +65,78 @@ function App() {
 					<select onChange={(e) => setZodiac(e.target.value)}>
 						<option value="Pisces">Pisces</option>
 						<option value="Aries">Aries</option>
-						<option value="Cancer">Cancer</option>
+						<option value="Aquarius">Aquarius</option>
 						<option value="Leo">Leo</option>
+						<option value="Libra">Libra</option>
 						{/* Add all 16 MBTI types */}
 					</select>
 				</div>
 			</div>
 			<div className="button-container">
-				<button onClick={fetchFortune}>Reveal Your Fotune</button>
+				<button onClick={fetchFortune}>Explore Your Potential</button>
+				<button onClick={toggleFriendForm}>+ Add Record</button>
 			</div>
+
+			{showFriendForm && (
+        <div className="friend-form">
+          <h2>Enter Information</h2>
+          <label>Name: </label>
+          <input
+            type="text"
+            value={friendName}
+            onChange={(e) => setFriendName(e.target.value)}
+          />
+
+					<label>MBTI: </label>
+          <select
+            value={friendMbti}
+            onChange={(e) => setFriendMbti(e.target.value)}
+          >
+            <option value="INTJ">INTJ</option>
+            <option value="ISFP">ISFP</option>
+						<option value="ISTP">ISTP</option>
+            <option value="ENTJ">ENTJ</option>
+            <option value="ESFP">ESFP</option>
+            {/* Add all 16 MBTI types */}
+          </select>
+
+          <label>Zodiac Sign: </label>
+          <select
+            value={friendZodiac}
+            onChange={(e) => setFriendZodiac(e.target.value)}
+          >
+            <option value="Aries">Aries</option>
+            <option value="Leo">Leo</option>
+						<option value="Libra">Libra</option>
+            <option value="Pisces">Pisces</option>
+            <option value="Cancer">Cancer</option>
+            {/* Add all Zodiac signs */}
+          </select>
+
+          <button onClick={checkCompatibility}>Check Compatibility</button>
+        </div>
+      )}
+
+			{compatibilityResult && (
+        <div className="compatibility-result">
+          <h2>Compatibility Result</h2>
+          <p>{compatibilityResult}</p>
+        </div>
+      )}
 
 			{fortune && (
         <div className="fortune-display">
-          <h2>Overview</h2>
-          <p>{fortune.overview}</p>
+          <h2>Snapshot</h2>
+          <p>{fortune.snapshot}</p>
 
-          <h2>Emotional vs Logical</h2>
-          <p><strong>{fortune.emotional_logical.type}:</strong> {fortune.emotional_logical.message}</p>
+          <h2>Intuitive vs Analytical</h2>
+          <p><strong>{fortune.heart_mind.type}:</strong> {fortune.heart_mind.message}</p>
 
-          <h2>Static vs Dynamic</h2>
-          <p><strong>{fortune.static_dynamic.type}:</strong> {fortune.static_dynamic.message}</p>
+          <h2>Consistent vs Vibrant</h2>
+          <p><strong>{fortune.rhythm_of_being.type}:</strong> {fortune.rhythm_of_being.message}</p>
 
-          <h2>Passive vs Aggressive</h2>
-          <p><strong>{fortune.passive_aggressive.type}:</strong> {fortune.passive_aggressive.message}</p>
+          <h2>Receptive vs Assertive</h2>
+          <p><strong>{fortune.inner_drive.type}:</strong> {fortune.inner_drive.message}</p>
         </div>
       )}
 		</div>
@@ -87,8 +145,6 @@ function App() {
 
 // Find the root element
 const rootElement = document.getElementById('root');
-
-// Create a root for React 18
 const root = createRoot(rootElement);
 
 // Render the App component

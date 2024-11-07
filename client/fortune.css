@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Noto Sans', Monospace;
   color: #4A90E2;
   text-align: center;
 }
@@ -17,20 +17,24 @@ label {
   color: #333;
 }
 
-select {
+select, input[type="text"], input[type="number"] {
   padding: 8px;
   margin: 10px 0;
   font-size: 1rem;
   border-radius: 4px;
   border: 1px solid #ccc;
+	width: 100%;
+  box-sizing: border-box;
 }
 
 /* client/fortune.css */
 .selection-container {
   display: flex;
+	margin: 20px 0;
   gap: 40px; /* Space between each label-dropdown pair */
   align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
 	/* flex-flow: column wrap; */
 }
 
@@ -38,6 +42,13 @@ select {
   display: flex;
   flex-direction: column;
 } */
+
+.input-group {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
 
 .input-group label {
   font-size: 16px;
@@ -49,10 +60,42 @@ select {
   padding: 5px;
 }
 
+.friend-form {
+  margin-top: 20px;
+  background-color: #f3f6f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(35, 13, 198, 0.1);
+  transition: opacity 0.3s ease-in-out;
+
+	border: 1px solid #dddddd;
+  max-width: 600px;
+  margin: 18px auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.friend-form input, .friend-form select {
+  margin-top: 10px;
+}
+
+.compatibility-result {
+	border: 1px solid #dddddd;
+  max-width: 600px;
+	margin: 20px auto;
+  margin-top: 20px;
+  background-color: #e2f7fa;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #0f81a1;
+  text-align: center;
+}
+
 .button-container {
   display: flex;
   justify-content: center; /* Horizontally centers the button */
   margin-top: 20px; /* Optional: Adds space above the button */
+	gap: 10px
 }
 
 .button-container button {
@@ -72,7 +115,7 @@ select {
 }
 
 .fortune-display {
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
   padding: 20px;
   border-radius: 8px;
   background-color: #fff;
@@ -88,7 +131,8 @@ select {
 }
 
 .fortune-display h2 {
-  font-family: 'Playfair Display', serif;
+  font-family:  "Audiowide", sans-serif; 
+/* 'Playfair Display', serif; */
   color: #4A90E2;
   font-size: 1.3rem;
   margin-top: 30px;
@@ -106,4 +150,20 @@ select {
   color: #e2844a;
 }
 
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .selection-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
 
+  .input-group {
+    flex: none;
+    width: 100%;
+  }
+
+  .button-container button {
+    width: 100%;
+  }
+}

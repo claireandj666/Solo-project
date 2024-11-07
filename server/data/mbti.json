@@ -2,69 +2,86 @@
   {
     "mbti": "INTJ",
     "zodiac": "Aries",
-    "overview": "A visionary and driven individual who loves challenges and strives for excellence.",
-    "emotional_logical": {
-      "type": "logical",
+    "snapshot": "A visionary and driven individual who loves challenges and strives for excellence.",
+    "heart_mind": {
+      "type": "Intuitive",
       "message": "You approach situations with a rational mindset, preferring reason over emotion. You pride yourself on your ability to think for yourself, not to mention your uncanny knack for seeing right through phoniness and hypocrisy. "
     },
-    "static_dynamic": {
-      "type": "dynamic",
+    "rhythm_of_being": {
+      "type": "Vibrant",
       "message": "You thrive on change and are always looking for new experiences. You prefer to make your own discoveries. In your quest to find better ways of doing things, you aren’t afraid to break the rules or risk disapproval – in fact, you often rather enjoy it. But as anyone with this personality type would tell you, a new idea isn’t worth anything unless it actually works. You want to be successful, not just inventive. Your bring a single-minded drive to their work, applying the full force of their insight, logic, and willpower. You have little patience for anyone who tries to slow you down by enforcing pointless rules or offering poorly thought-out criticism – though astute observations are generally welcome. "
     },
-    "passive_aggressive": {
-      "type": "passive",
+    "inner_drive": {
+      "type": "Receptive",
       "message": "You have a calm demeanor, avoiding unnecessary conflicts. You do crave social interaction – you'd just prefer to surround yourself with people who share your values and priorities. Often, you can achieve this just by being yourself. When pursuing your interests, your authenticity can draw people to you – professionally, socially, and even romantically."
     }
   },
 	{
     "mbti": "ISFP",
     "zodiac": "Leo",
-    "overview": "A gentle soul with a strong aesthetic sense, you find beauty in balance and harmony.",
-    "emotional_logical": {
-      "type": "emotional",
-      "message": "Your choices often reflect your deep emotional awareness. You are thoughtful and perceptive, able to pick up on people’s unspoken feelings and opinions, and it can upset you if you don’t feel liked, approved of, or appreciated. Your emotional receptivity and genuinely sensitive nature might be part of the reason why you tend to be so accepting and forgiving of others."
+    "snapshot": "A gentle soul with a strong aesthetic sense, you find beauty in balance and harmony.",
+    "heart_mind": {
+      "type": "Intuitive",
+      "message": "Guided by your heart, you tend to make decisions based on your deep personal values and a strong sense of empathy. The ISFP’s sensitivity is amplified by Leo’s generosity, making you someone who values connections and strives to bring warmth and positivity to others. You have a keen intuition for understanding people and situations, often sensing what’s beneath the surface. Your choices often reflect your deep emotional awareness. You are thoughtful and perceptive, able to pick up on people’s unspoken feelings and opinions, and it can upset you if you don’t feel liked, approved of, or appreciated. Your emotional receptivity and genuinely sensitive nature might be part of the reason why you tend to be so accepting and forgiving of others."
     },
-    "static_dynamic": {
-      "type": "static",
-      "message": "You prefer stability and a peaceful, steady environment. You prefer to take each day as it comes, doing what feels right to you in the moment. And you make sure to leave plenty of room in your lives for the unexpected – with the result that many of your most cherished memories are of spontaneous, spur-of-the-moment outings and adventures, whether by yourself or with the loved ones."
+    "rhythm_of_being": {
+      "type": "Vibrant",
+      "message": "Your Leo energy adds a lively and passionate edge to your ISFP nature. You are drawn to experiences that let you express your individuality and creativity. Whether through art, relationships, or pursuits that inspire you, you bring a radiant energy to everything you do, thriving in settings that celebrate authenticity and personal expression. You prefer stability and a peaceful, steady environment. You prefer to take each day as it comes, doing what feels right to you in the moment. And you make sure to leave plenty of room in your lives for the unexpected – with the result that many of your most cherished memories are of spontaneous, spur-of-the-moment outings and adventures, whether by yourself or with the loved ones."
     },
-    "passive_aggressive": {
-      "type": "passive",
-      "message": "You avoid conflicts and seek compromise when disagreements arise. You genuinely appreciate the diverse nature of the world, embracing people who may hold different opinions or practice unique lifestyles. It’s no surprise, then, that you rarely try to convince people to change who they are or what they believe in."
+    "inner_drive": {
+      "type": "Receptive",
+      "message": "While you possess Leo’s inner strength and courage, your ISFP temperament leans toward a softer, more receptive approach to life. You’re open to new ideas and experiences and often prefer to take things as they come rather than assertively pushing ahead. This balance allows you to be a gentle yet impactful presence, one who is approachable and genuinely attentive to others. You avoid conflicts and seek compromise when disagreements arise. You genuinely appreciate the diverse nature of the world, embracing people who may hold different opinions or practice unique lifestyles. It’s no surprise, then, that you rarely try to convince people to change who they are or what they believe in."
     }
   },
 	{
     "mbti": "ENTJ",
     "zodiac": "Aquarius",
-    "overview": "Driven and independent, you’re a natural leader with a vision for the future.",
-    "emotional_logical": {
-      "type": "logical",
-      "message": "Your decisions are based on reason, with a focus on achieving your goals."
+    "snapshot": "Driven and independent, you’re a natural leader with a vision for the future.",
+    "heart_mind": {
+      "type": "Analytical",
+      "message": "Your decisions are based on reason, with a focus on achieving your goals. You need to remember, though, that your stature comes not just from your own actions but from the actions of the team that props you up. You are able to combine an emotionally healthy focus alongside your many strengths, you will be rewarded with deep, satisfying relationships and all the challenging victories that you can handle."
     },
-    "static_dynamic": {
-      "type": "dynamic",
-      "message": "You adapt well to change and enjoy innovating new ideas."
+    "rhythm_of_being": {
+      "type": "Vibrant",
+      "message": "You adapt well to change and enjoy innovating new ideas. You have the  ability to think strategically and hold a long-term focus while executing each step of plans with determination and precision makes you powerful business leaders."
     },
-    "passive_aggressive": {
-      "type": "aggressive",
-      "message": "You are assertive and determined, rarely shying away from conflict."
+    "inner_drive": {
+      "type": "Assertive",
+      "message": "You are assertive and determined, rarely shying away from conflict. You have a particular skill in recognizing the talents of others, and this helps in your team-building efforts (since no one, no matter how brilliant, can do everything alone). However, you also have a particular skill in calling out others’ failures with a chilling degree of insensitivity, and this is where you really start to run into trouble."
     }
   },
   {
     "mbti": "ESFP",
     "zodiac": "Pisces",
-    "overview": "Energetic and compassionate, you live in the moment and value strong connections.",
-    "emotional_logical": {
-      "type": "emotional",
-      "message": "You feel deeply and are guided by empathy in your interactions."
+    "snapshot": "Energetic and compassionate, you live in the moment and value strong connections.",
+    "heart_mind": {
+      "type": "Intuitive",
+      "message": "You feel deeply and are guided by empathy in your interactions. You are observant and very sensitive to others’ emotions. Often the first to help someone talk out a challenging problem, you happily provide emotional support and practical advice."
     },
-    "static_dynamic": {
-      "type": "dynamic",
-      "message": "You are spontaneous and embrace life’s unpredictable nature."
+    "rhythm_of_being": {
+      "type": "Vibrant",
+      "message": "You are spontaneous and embrace life’s unpredictable nature. You truly enjoy the simplest things, and there’s no greater joy for you than just having fun with a good group of friends. You love soaking up attention and making every get-together feel a bit like a party."
     },
-    "passive_aggressive": {
-      "type": "passive",
-      "message": "You prefer harmony and avoid confrontations, spreading positivity."
+    "inner_drive": {
+      "type": "Receptive",
+      "message": "You prefer harmony and avoid confrontations, spreading positivity. The biggest challenge you face is that you are often so focused on immediate pleasures that you neglect the duties and responsibilities that make those luxuries possible. "
+    }
+  },
+	{
+    "mbti": "ISTP",
+    "zodiac": "Libra",
+    "snapshot": "Energetic and compassionate, you live in the moment and value strong connections.",
+    "heart_mind": {
+      "type": "Analytical",
+      "message": "Your ISTP analytical side thrives on logic, but Libra's influence adds a touch of empathy and consideration for others' perspectives. This makes you a balanced thinker: while you're rooted in facts and evidence, you naturally incorporate fairness and balance into your judgments. You often find yourself weighing both sides of a situation before making decisions, giving you an edge in diplomacy."
+    },
+    "rhythm_of_being": {
+      "type": "Vibrant",
+      "message": "Though ISTPs are often steady and grounded, your Libra influence brings a vibrant, social side. You’re adaptable and flexible, unafraid to shift gears and try new approaches. This blend gives you the ability to stay calm under pressure while still embracing spontaneity. You’re comfortable in environments that value balance but also allow for a bit of creative flair."
+    },
+    "inner_drive": {
+      "type": "Assertive",
+      "message": "While Libras are known for being agreeable, your ISTP personality gives you a more assertive edge. You’re direct and unafraid to speak your mind, especially when it comes to defending your values or achieving your goals. This inner drive makes you decisive and action-oriented, yet you know how to assert yourself in a way that feels respectful and balanced. "
     }
   }
 ]
