@@ -1,0 +1,70 @@
+[
+  {
+    "mbti": "INTJ",
+    "zodiac": "Aries",
+    "overview": "A visionary and driven individual who loves challenges and strives for excellence.",
+    "emotional_logical": {
+      "type": "logical",
+      "message": "You approach situations with a rational mindset, preferring reason over emotion. You pride yourself on your ability to think for yourself, not to mention your uncanny knack for seeing right through phoniness and hypocrisy. "
+    },
+    "static_dynamic": {
+      "type": "dynamic",
+      "message": "You thrive on change and are always looking for new experiences. You prefer to make your own discoveries. In your quest to find better ways of doing things, you aren’t afraid to break the rules or risk disapproval – in fact, you often rather enjoy it. But as anyone with this personality type would tell you, a new idea isn’t worth anything unless it actually works. You want to be successful, not just inventive. Your bring a single-minded drive to their work, applying the full force of their insight, logic, and willpower. You have little patience for anyone who tries to slow you down by enforcing pointless rules or offering poorly thought-out criticism – though astute observations are generally welcome. "
+    },
+    "passive_aggressive": {
+      "type": "passive",
+      "message": "You have a calm demeanor, avoiding unnecessary conflicts. You do crave social interaction – you'd just prefer to surround yourself with people who share your values and priorities. Often, you can achieve this just by being yourself. When pursuing your interests, your authenticity can draw people to you – professionally, socially, and even romantically."
+    }
+  },
+	{
+    "mbti": "ISFP",
+    "zodiac": "Leo",
+    "overview": "A gentle soul with a strong aesthetic sense, you find beauty in balance and harmony.",
+    "emotional_logical": {
+      "type": "emotional",
+      "message": "Your choices often reflect your deep emotional awareness. You are thoughtful and perceptive, able to pick up on people’s unspoken feelings and opinions, and it can upset you if you don’t feel liked, approved of, or appreciated. Your emotional receptivity and genuinely sensitive nature might be part of the reason why you tend to be so accepting and forgiving of others."
+    },
+    "static_dynamic": {
+      "type": "static",
+      "message": "You prefer stability and a peaceful, steady environment. You prefer to take each day as it comes, doing what feels right to you in the moment. And you make sure to leave plenty of room in your lives for the unexpected – with the result that many of your most cherished memories are of spontaneous, spur-of-the-moment outings and adventures, whether by yourself or with the loved ones."
+    },
+    "passive_aggressive": {
+      "type": "passive",
+      "message": "You avoid conflicts and seek compromise when disagreements arise. You genuinely appreciate the diverse nature of the world, embracing people who may hold different opinions or practice unique lifestyles. It’s no surprise, then, that you rarely try to convince people to change who they are or what they believe in."
+    }
+  },
+	{
+    "mbti": "ENTJ",
+    "zodiac": "Aquarius",
+    "overview": "Driven and independent, you’re a natural leader with a vision for the future.",
+    "emotional_logical": {
+      "type": "logical",
+      "message": "Your decisions are based on reason, with a focus on achieving your goals."
+    },
+    "static_dynamic": {
+      "type": "dynamic",
+      "message": "You adapt well to change and enjoy innovating new ideas."
+    },
+    "passive_aggressive": {
+      "type": "aggressive",
+      "message": "You are assertive and determined, rarely shying away from conflict."
+    }
+  },
+  {
+    "mbti": "ESFP",
+    "zodiac": "Pisces",
+    "overview": "Energetic and compassionate, you live in the moment and value strong connections.",
+    "emotional_logical": {
+      "type": "emotional",
+      "message": "You feel deeply and are guided by empathy in your interactions."
+    },
+    "static_dynamic": {
+      "type": "dynamic",
+      "message": "You are spontaneous and embrace life’s unpredictable nature."
+    },
+    "passive_aggressive": {
+      "type": "passive",
+      "message": "You prefer harmony and avoid confrontations, spreading positivity."
+    }
+  }
+]
